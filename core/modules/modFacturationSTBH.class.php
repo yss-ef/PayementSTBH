@@ -66,9 +66,9 @@ class modFacturationSTBH extends DolibarrModules
 
 		// DESCRIPTION_FLAG
 		// Module description, used if translation string 'ModuleFacturationSTBHDesc' not found (FacturationSTBH is name of module).
-		$this->description = "FacturationSTBHDescription";
+		$this->description = "Module qui permet la gestion des payement international";
 		// Used only if file README.md and README-LL.md not found.
-		$this->descriptionlong = "FacturationSTBHDescription";
+		$this->descriptionlong = "Module qui permet la gestion des payement international en remplacant la tva par une taxe au choix";
 
 		// Author
 		$this->editor_name = 'Youssef Fellah';
@@ -321,7 +321,7 @@ class modFacturationSTBH extends DolibarrModules
 		$this->menu[$r++] = array(
 			'fk_menu' => '', // Will be stored into mainmenu + leftmenu. Use '' if this is a top menu. For left menu, use 'fk_mainmenu=xxx' or 'fk_mainmenu=xxx,fk_leftmenu=yyy' where xxx is mainmenucode and yyy is a leftmenucode
 			'type' => 'top', // This is a Top menu entry
-			'titre' => 'ModuleFacturationSTBHName',
+			'titre' => 'Facturation STBH',
 			'prefix' => img_picto('', $this->picto, 'class="pictofixedwidth valignmiddle"'),
 			'mainmenu' => 'facturationstbh',
 			'leftmenu' => '',
